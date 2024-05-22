@@ -4,7 +4,7 @@ function MainFooter() {
   return (
     <Wrapper>
       <span>
-        © 2024 &nbsp;<b>Muaz Abdeen & Partners</b> - All Rights Reserved.
+        © 2024 &nbsp;<b>A-tech Group D</b> - All Rights Reserved.
       </span>
     </Wrapper>
   );
