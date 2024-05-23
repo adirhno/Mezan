@@ -75,7 +75,8 @@ class AuthController {
     }
 
     logout(req, res) {
-        res.clearCookie("token").sendStatus(204);
+        res.clearCookie('token');
+        res.sendStatus(204);
     }
 
     async loginWithGoogle(req, res) {

@@ -9,7 +9,7 @@ function PageHeader({ name }) {
   let { userData } = useRouteLoaderData("root");
 
   async function handleLogout() {
-    await fetcher("/auth/logout", { method: "POST" });
+    await fetcher("/auth/logout", { method: "POST", credentials: 'same-origin' });
     toast.success("Logged out successfully");
     revalidator.revalidate();
     return navigate("/");
