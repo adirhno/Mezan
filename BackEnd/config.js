@@ -3,7 +3,7 @@ config();
 
 export default class Config {
     
-    static FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:5173";
+    static FRONTEND_URL = process.env.FRONTEND_URL || "https://e-court-system-2.onrender.com";
     static PORT = process.env.PORT || 4000;
     static DB_URL = process.env.DB_URL || "mongodb://127.0.0.1/justice-overseer";
     static HASH_PASSWORD_SALT_ROUNDS = process.env.HASH_PASSWORD_SALT_ROUNDS || 10;
