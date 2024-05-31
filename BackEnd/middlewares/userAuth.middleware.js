@@ -5,6 +5,7 @@ import jwt from "jsonwebtoken";
 export function authorizationMiddleWare(req, res, next) {
     const { token } = req.cookies;
     try {
+        console.log(req, "from toekn")
         const payload = jwt.verify(token, Config.JWT_SECRET_KEY);
         if(payload.visitor) {
             req.userType = "Visitor";

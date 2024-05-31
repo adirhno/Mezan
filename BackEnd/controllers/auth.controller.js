@@ -67,6 +67,7 @@ class AuthController {
 
             const payload = { userId: user._id };
             const tokenCookie = authUtils.createTokenCookie(payload);
+            console.log(tokenCookie)
             res.setHeader("Set-Cookie", tokenCookie);
             res.json({ firstName: user.firstName, lastName: user.lastName, userType: user.userType });
         } catch (error) {
